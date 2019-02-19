@@ -2,6 +2,8 @@
 
 namespace Modera\TestsRunner;
 
+use PHPUnit\Framework\TestSuite;
+
 /**
  * @internal
  *
@@ -31,9 +33,9 @@ class InterceptorsExecutor
     }
 
     /**
-     * @param \PHPUnit_Framework_TestSuite $suite
+     * @param TestSuite $suite
      */
-    public function handleSuite(\PHPUnit_Framework_TestSuite $suite)
+    public function handleSuite(TestSuite $suite)
     {
         $suiteClassName = $suite->getName();
         if (!class_exists($suiteClassName)) {

@@ -14,12 +14,11 @@
         }
     },
     "require": {
-        "php": ">=5.6"
+        "php": ">=7.2"
     },
     "require-dev": {
-        "phake/phake": "^3.0",
         "symfony/yaml": "^3.0",
-        "phpunit/phpunit": "^5.5",
+        "phpunit/phpunit": "^8.0",
         "mikey179/vfsStream": "^1.6"
     }
 }
